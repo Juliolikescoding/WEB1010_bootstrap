@@ -1,0 +1,11 @@
+/* sidebar */
+#sidebar-wrapper{
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    background: #2C3E50;
+    border: 2px solid red;
+    opa
+}

@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-<link rel="stylesheet" href="style.css">
-<title>Title</title>
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript">
+    //function for tittle scrolling
+    function scrlsts() {
+        //var scrltest = " Nature ";
+        scrltest=document.title;
+
+        //alert(scrltest);
+        scrltest = scrltest.substring(1, scrltest.length) + scrltest.substring(0, 1);
+
+        //alert(scrltest);
+        document.title = scrltest;
+
+        setTimeout("scrlsts()", 1000);
+    }
+    $(document).ready(function() {
+        var scrltest = " Nature dff ssfd ";
+        document.title=scrltest;
+        scrlsts();
+    });
+</script>  -->
+    <title>bootstrap: modals!</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Log in Demo</h3>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#popUpWindow">Open Log In Window</button>
+        <div class="modal fade" id="popUpWindow">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- header -->
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <!-- body -->
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- footer -->
+                    <div class="modal-footer">
+                        <button class="btn btn-primary btn-block">Log In</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </div>
 </body>
+
 </html>
